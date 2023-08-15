@@ -1,0 +1,99 @@
+.contain {
+    display: flex;
+    position: relative;
+    background-color: rgb(145, 121, 105);
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+}
+
+.message {
+    position: absolute;
+    bottom: 20px;
+    width: 80%;
+    height: 50px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 30px;
+    outline: none;
+    padding: 0 20px;
+    z-index: 10;
+}
+
+.message::placeholder {
+    color: rgb(100, 100, 100);
+}
+
+.chatsContain {
+    display: flex;
+    flex-direction: column;
+    width: 98%;
+    height: 90%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.chatsContain::-webkit-scrollbar {
+    display: none;
+}
+
+.chatContain {
+    display: flex;
+    flex-direction: column;
+    width: 96%;
+    height: fit-content;
+    padding: 10px;
+}
+
+.chatName {
+    color: black;
+    font-weight: 300;
+    margin: 5px 0;
+}
+
+.chat {
+    font-weight: bold;
+    background-color: rgb(122, 95, 82);
+    margin: 0;
+    padding: 10px;
+    width: fit-content;
+    border-radius: 10px;
+}
+
+.myChatContain {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 96%;
+    height: fit-content;
+    padding: 10px;
+}
+
+.sendButton {
+    width: fit-content;
+    height: 30px;
+    border-radius: 30px;
+    border: none;
+    box-shadow: rgb(145, 82, 0) 2px 2px;
+    background-color: rgb(185, 127, 0);
+    position: absolute;
+    bottom: 30px;
+    right: 10%;
+    z-index: 12;
+    cursor: pointer;
+}
+
+.option {
+    position: fixed;
+    top: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    z-index: 10;
+    margin: 0 10px;
+}
